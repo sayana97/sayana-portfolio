@@ -1,4 +1,4 @@
-# Sayana — React Portfolio
+# Sayana - Portfolio
 
 A responsive React + Vite portfolio based on the generated UI.
 
