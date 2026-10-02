@@ -11,30 +11,31 @@ import "./styles.css";
 const experience = [
   {
     company: "Aarhus University, Denmark",
-    role: "IT Staff/Engineer",
+    role: "IT Engineer (part time)",
     period: "August 2024 - Present",
     bullets: [
-      "Develop and maintain features for the university's self-hosted Overleaf platform using React, TypeScript and JavaScript.",
+      "Developing and maintaining university's self-hosted Overleaf platform using React, TypeScript and JavaScript.",
+      "Building and shipping features such as internal dashboards, tracking, templates using React and TypeScript.",
+      "Creating and maintaining GitLab CI/CD pipelines with build and test stages to support development and deployment.",
+      "Developing Python automation scripts supporting recurring infrastructure and platform tasks.",
+      "Developing automated unit tests to improve reliability and support continuous development",
       "Integrated Microsoft Entra ID (OIDC) Single Sign-On (SSO), configuring OAuth/OIDC authentication and implementing the authentication flow in code.",
-      "Built and shipped internal dashboards and platform features using React and TypeScript.",
-      "Develop Python automation scripts supporting recurring infrastructure and platform tasks.",
-      "Maintain Git and GitLab workflows and CI/CD pipeline configurations for build, test and deployment automation.",
-      "Develop automated unit tests to improve reliability and support continuous development."
     ]
   },
   {
     company: "Aarhus University, Denmark",
-    role: "Student Assistant - Marketing & Communications",
+    role: "Student Assistant - Marketing & Communications (part time)",
     period: "August 2024 - Present",
     bullets: [
       "Produced guides, figures, and structured summaries for reports and presentations, translating technical work for non-technical stakeholders.",
       "Delivered presentations and guidance sessions to a wide range of audiences, both in-person and online.",
-      "Helped students navigate university systems and resources."
+      "Helped students navigate university systems and resources.",
+      "Developed and maintained Aarhus University web pages for international audience using Typo3, HTML, JavaScript and CSS - with a focus on usability, accessibility, SEO, and consistent UX. "
     ]
   },
   {
     company: "Schneider Electric, India",
-    role: "Software, Senior Design Engineer",
+    role: "Software, Senior Design Engineer (full time)",
     period: "Dec 2023 - Aug 2024",
     bullets: [
       "Built energy management web applications using Angular, TypeScript, RxJS, JavaScript, HTML and CSS.",
@@ -46,7 +47,7 @@ const experience = [
   },
   {
     company: "Tata Elxsi, India",
-    role: "Senior Software Engineer",
+    role: "Senior Software Engineer (full time)",
     period: "Jan 2022 - Dec 2023",
     bullets: [
       "Developed enterprise healthcare operations web applications using Angular and .NET.",
@@ -56,7 +57,7 @@ const experience = [
   },
   {
     company: "H&R Block, India",
-    role: "Software Engineer",
+    role: "Software Engineer (full time)",
     period: "July 2019 - Jan 2022",
     bullets: [
       "Developed frontend features for a modernised cloud-native taxation web application using Angular and related technologies.",
@@ -208,7 +209,7 @@ function App() {
       <main>
         <section id="home" className="hero section">
           <div className="hero-copy">
-            <div className="eyebrow"><span className="status-dot" /> Software Developer <i>•</i> Typescript <i>•</i> Angular & React <i>•</i> AI Enthusiast <i>•</i> MSc in AI & Data Analysis</div>
+            <div className="eyebrow"><span className="status-dot" /> Software Developer <i>•</i> Typescript <i>•</i> JavaScript <i>•</i> Angular & React <i>•</i> AI Enthusiast <i>•</i> MSc in AI & Data Science</div>
             <h1>Hi, I am <em>Sayana</em> <span className="wave">👋</span></h1>
             <p className="hero-text">
               I enjoy building meaningful software, exploring how AI and data can solve
