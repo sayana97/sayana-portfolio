@@ -11,7 +11,7 @@ import "./styles.css";
 const experience = [
   {
     company: "Aarhus University, Denmark",
-    role: "IT Staff/Research Infrastructure Support Engineer",
+    role: "IT Staff/Engineer",
     period: "August 2024 - Present",
     bullets: [
       "Develop and maintain features for the university's self-hosted Overleaf platform using React, TypeScript and JavaScript.",
@@ -20,6 +20,16 @@ const experience = [
       "Develop Python automation scripts supporting recurring infrastructure and platform tasks.",
       "Maintain Git and GitLab workflows and CI/CD pipeline configurations for build, test and deployment automation.",
       "Develop automated unit tests to improve reliability and support continuous development."
+    ]
+  },
+  {
+    company: "Aarhus University, Denmark",
+    role: "Student Assistant - Marketing & Communications",
+    period: "August 2024 - Present",
+    bullets: [
+      "Produced guides, figures, and structured summaries for reports and presentations, translating technical work for non-technical stakeholders.",
+      "Delivered presentations and guidance sessions to a wide range of audiences, both in-person and online.",
+      "Helped students navigate university systems and resources."
     ]
   },
   {
@@ -186,9 +196,9 @@ function App() {
           <button className="icon-button" onClick={() => setDark(v => !v)} aria-label="Toggle theme">
             {dark ? <Sun size={17} /> : <Moon size={17} />}
           </button>
-          <a className="cv-button" href="/Sayana__Raju__CV.pdf" download>
+          {/* <a className="cv-button" href="/Sayana__Raju__CV.pdf" download>
             <Download size={15} /> Download CV
-          </a>
+          </a> */}
           <button className="menu-button" onClick={() => setMenu(v => !v)} aria-label="Open menu">
             {menu ? <X /> : <Menu />}
           </button>
@@ -202,7 +212,7 @@ function App() {
             <h1>Hi, I am <em>Sayana</em> <span className="wave">👋</span></h1>
             <p className="hero-text">
               I enjoy building meaningful software, exploring how AI and data can solve
-              real-world problems, and turning ideas into products.
+              real-world problems, turning ideas into solutions, and having a good conversation along the way.
             </p>
             <div className="hero-buttons">
               <a className="primary-button" href="#experience">View My Experience <ArrowUpRight size={17} /></a>
@@ -245,7 +255,7 @@ function App() {
             <span className="small-label">MY JOURNEY</span>
             <h2>Experience</h2>
             <p>Building software, working with great teams, and contributing to impactful products.</p>
-            <a className="secondary-button" href="/Sayana__Raju__CV.pdf" download>View Full CV <ArrowUpRight size={16} /></a>
+            {/* <a className="secondary-button" href="/Sayana__Raju__CV.pdf" download>View Full CV <ArrowUpRight size={16} /></a> */}
           </div>
           <div className="timeline">
             {experience.map((item, i) => (
@@ -379,7 +389,121 @@ function App() {
             ))}
           </div>
         </section>
+             <section className="personal section">
+          <div className="personal-layout">
 
+            {/* Left - Photo collage */}
+            <div className="personal-collage">
+
+              <div className="collage-image collage-dancing">
+                <img
+                  src="/personal/image1.JPG"
+                  alt="Dancing"
+                />
+              </div>
+
+              <div className="collage-image collage-nature">
+                <img
+                  src="/personal/image2.JPG"
+                  alt="Exploring nature"
+                />
+              </div>
+
+              <div className="collage-image collage-volunteering">
+                <img
+                  src="/personal/image5.JPG"
+                  alt="Volunteering"
+                />
+              </div>
+
+              <div className="collage-image collage-travel">
+                <img
+                  src="/personal/image4.jpeg"
+                  alt="Travel"
+                />
+              </div>
+
+            </div>
+
+            {/* Right - Personal details */}
+            <div className="personal-copy">
+
+              <span className="small-label">A LITTLE BIT MORE ABOUT ME</span>
+
+              <p className="personal-intro">
+                {/* Here’s what I get up to when I am not glued to my laptop. */}
+              </p>
+
+              <div className="personal-details">
+
+               
+
+                <div className="personal-detail">
+                  <h3>✈️ Travel & Photography</h3>
+                  <p>
+                    Exploring new places, cultures, and capturing moments along the way.
+                  </p>
+                </div>
+
+                <div className="personal-detail">
+                  <h3>🪴 Aspiring Plant Mom</h3>
+                  <p>
+                    Slowly building my little plant collection and trying my
+                    best to keep everything alive.
+                  </p>
+                </div>
+
+                <div className="personal-detail">
+                  <h3>🎉 Social & Community</h3>
+                  <p>
+                    I enjoy social gatherings, community events, and meeting
+                    new people. Good conversations and good company go a long way.
+                  </p>
+                </div>
+
+                 <div className="personal-detail">
+                  <h3>💃 Dancing</h3>
+                  <p>
+                    I enjoy dancing. No framework, no Git branch,
+                    and definitely no code review.
+                  </p>
+                </div>
+
+                <div className="personal-detail">
+                  <h3>🌿 Nature</h3>
+                  <p>
+                    I love spending time in nature - A disconnect from the digital world.
+                  </p>
+                </div>
+
+                
+
+                <div className="personal-detail">
+                  <h3>🏃 Staying Active</h3>
+                  <p>
+                    I try to be active, whether it’s running, yoga,
+                    or simply going for a walk in nature.
+                  </p>
+                </div>
+
+                <div className="personal-detail">
+                  <h3>👗 Food & Fashion</h3>
+                  <p>
+                    I enjoy fashion, putting together outfits, and trying new foods.
+                  </p>
+                </div>
+                <div className="personal-detail">
+                  <h3>🌍 Volunteering</h3>
+                  <p>
+                    Giving back, sharing what I know, and helping where I can.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </section>
         <section id="contact" className="contact section">
           <div>
             <span className="small-label">GET IN TOUCH</span>
