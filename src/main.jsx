@@ -3,8 +3,7 @@ import { createRoot } from "react-dom/client";
 import {
   ArrowDownRight, ArrowUp, ArrowUpRight, BrainCircuit, BriefcaseBusiness,
   ChevronRight, CircleDot, Code2, Database, Download, Github, Globe2,
-  Layers3, Linkedin, Mail, MapPin, Menu, Moon, Network, Sparkles, Sun, ShieldCheck,
-  X
+  Layers3, Linkedin, Mail, MapPin, Menu, Moon, Network, Sparkles, Sun, ShieldCheck, Smartphone, BarChart3, X
 } from "lucide-react";
 import "./styles.css";
 
@@ -72,22 +71,34 @@ const experience = [
 
 const projects = [
   {
-    title: "Overleaf AU Edition",
-    tags: ["React", "TypeScript", "Node.js"],
-    text: "Built features for an internal dashboard and self-hosted Overleaf platform focused on usage and platform health.",
-    icon: Globe2
-  },
-  {
-    title: "MLHCA - MSc Thesis",
-    tags: ["Python", "PyTorch", "OR-Tools"],
-    text: "Reproduced and evaluated MLHCA research results, achieving 42% fewer queries than BOCA in the evaluated setup.",
+    title: "MLHCA (ML-Powered Hybrid Combinatorial Auctions)",
+    tags: ["Python", "PyTorch", "Google OR-Tools/SCIP", "AWS"],
+    text: "Independently implemented and evaluated an ML-powered combinatorial auction mechanism from first principles, reproducing published research results using machine learning and constrained optimization.",
     icon: BrainCircuit
   },
   {
-    title: "AI Assist",
-    tags: ["OpenAI", "Azure", "Python"],
-    text: "Designed an AI gateway architecture for AI Assist and Error Assist with multiple provider options and a kill switch.",
+    title: "Patient-Readable Clinical Trials (NLP)",
+    tags: ["LLMs", "LLaMA 3.3", "Groq", "Python", "NLP"],
+    text: "Developed an end-to-end LLM pipeline to transform clinical trial data into patient-friendly summaries, combining summarisation, text simplification, jargon detection, and glossary generation.",
     icon: Sparkles
+  },
+  {
+    title: "The Economic Story of COVID-19 (Data Visualization)",
+    tags: ["Python", "Plotly", "Dash"],
+    text: "Built an interactive multi-dimensional data visualization tool exploring the economic impact of COVID-19 across sectors, with a Python backend serving dynamic data to a Dash frontend.",
+    icon: BarChart3
+  },
+  {
+    title: "The Curated Web (Chrome Extension - Web)",
+    tags: ["JavaScript", "Angular", "Mastodon API"],
+    text: "Developed a Chrome extension for in-browser content curation and sharing, integrating with Mastodon's federated API and working with OAuth flows and browser runtime APIs.",
+    icon: Globe2
+  },
+  {
+    title: "AR Cultural Heritage Experience (Unity - AR)",
+    tags: ["Unity", "AR", "Game Development"],
+    text: "Created a playable AR prototype where users interact with paintings and uncover clues connected to cultural narratives, using interactive scenes, proximity-based interactions, and game-state management.",
+    icon: Smartphone
   }
 ];
 
@@ -283,25 +294,37 @@ function App() {
           </div>
         </section>
 
-        {/* <section id="projects" className="section projects-section">
+        <section id="projects" className="section projects-section">
           <div className="section-copy">
-            <span className="small-label">FEATURED PROJECTS</span>
-            <h2>Things I’ve Built</h2>
-            <p>From developer tools to AI experiments - here are a few projects I am proud of.</p>
-            <a className="secondary-button" href="#contact">View All Projects <ArrowUpRight size={16} /></a>
+            {/* <span className="small-label"> Projects & Research</span> */}
+            <h2>ACADEMIC PROJECTS</h2>
+            <p>
+              A selection of projects from my MSc and academic work, exploring AI,
+              machine learning, and real-world applications.
+            </p>
+            {/* <a className="secondary-button" href="#contact">
+              View All Projects <ArrowUpRight size={16} />
+            </a> */}
           </div>
+
           <div className="project-grid">
             {projects.map(({ title, tags, text, icon: Icon }) => (
               <article className="project-card" key={title}>
-                <div className="project-visual"><Icon size={38} /></div>
+                <div className="project-visual">
+                  <Icon size={38} />
+                </div>
                 <h3>{title}</h3>
-                <div className="tags">{tags.map(t => <span key={t}>{t}</span>)}</div>
+                <div className="tags">
+                  {tags.map(t => <span key={t}>{t}</span>)}
+                </div>
                 <p>{text}</p>
-                <a href="#contact">View Project <ArrowUpRight size={14} /></a>
+                <a href="#contact">
+                  View Project <ArrowUpRight size={14} />
+                </a>
               </article>
             ))}
           </div>
-        </section> */}
+        </section>
 
         <section id="thesis" className="section thesis">
           <div className="thesis-art">
@@ -390,7 +413,7 @@ function App() {
             ))}
           </div>
         </section>
-             <section className="personal section">
+        <section className="personal section">
           <div className="personal-layout">
 
             {/* Left - Photo collage */}
@@ -429,15 +452,13 @@ function App() {
             {/* Right - Personal details */}
             <div className="personal-copy">
 
-              <span className="small-label">A LITTLE BIT MORE ABOUT ME</span>
-
+              <span className="small-label">Beyond the Code</span>
+              <h2>A LITTLE BIT MORE ABOUT ME</h2>
               <p className="personal-intro">
-                {/* Here’s what I get up to when I am not glued to my laptop. */}
+                I like to stay curious, active, and connected.
               </p>
 
               <div className="personal-details">
-
-               
 
                 <div className="personal-detail">
                   <h3>✈️ Travel & Photography</h3>
@@ -446,62 +467,31 @@ function App() {
                   </p>
                 </div>
 
+
+
                 <div className="personal-detail">
-                  <h3>🪴 Aspiring Plant Mom</h3>
+                  <h3>🌿 Nature & Outdoors · 🏃 Staying Active</h3>
                   <p>
-                    Slowly building my little plant collection and trying my
-                    best to keep everything alive.
+                    Nature walks, running, yoga, and growing my little plant collection.
                   </p>
                 </div>
 
                 <div className="personal-detail">
-                  <h3>🎉 Social & Community</h3>
+                  <h3>💃 Dancing · 👗 Food & Fashion</h3>
                   <p>
-                    I enjoy social gatherings, community events, and meeting
-                    new people. Good conversations and good company go a long way.
-                  </p>
-                </div>
-
-                 <div className="personal-detail">
-                  <h3>💃 Dancing</h3>
-                  <p>
-                    I enjoy dancing. No framework, no Git branch,
-                    and definitely no code review.
-                  </p>
-                </div>
-
-                <div className="personal-detail">
-                  <h3>🌿 Nature</h3>
-                  <p>
-                    I love spending time in nature - A disconnect from the digital world.
-                  </p>
-                </div>
-
-                
-
-                <div className="personal-detail">
-                  <h3>🏃 Staying Active</h3>
-                  <p>
-                    I try to be active, whether it’s running, yoga,
-                    or simply going for a walk in nature.
-                  </p>
-                </div>
-
-                <div className="personal-detail">
-                  <h3>👗 Food & Fashion</h3>
-                  <p>
-                    I enjoy fashion, putting together outfits, and trying new foods.
+                    Dancing, experimenting with outfits, and discovering new foods and flavours.
                   </p>
                 </div>
                 <div className="personal-detail">
-                  <h3>🌍 Volunteering</h3>
+                  <h3>🎉 Social & Community · 🌍 Volunteering</h3>
                   <p>
-                    Giving back, sharing what I know, and helping where I can.
+                    Meeting new people, joining community events, and giving back where I can.
                   </p>
                 </div>
 
               </div>
             </div>
+
 
           </div>
         </section>
