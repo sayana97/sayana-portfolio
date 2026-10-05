@@ -116,8 +116,7 @@ const skills = [
       "SASS",
       "Bootstrap",
       "Tailwind",
-      "RxJS",
-      "TYPO3"
+      "RxJS"
     ]
   },
   {
@@ -169,6 +168,17 @@ const skills = [
       "SonarQube"
     ]
   },
+  {
+  title: "Web & Content",
+  icon: Globe2,
+  items: [
+    "TYPO3",
+    "Siteimprove",
+    "SEO",
+    "Web Accessibility",
+    "Content Management"
+  ]
+ },
   {
     title: "DevOps & Tools",
     icon: Network,
