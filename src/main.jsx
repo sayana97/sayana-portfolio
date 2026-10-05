@@ -116,7 +116,8 @@ const skills = [
       "SASS",
       "Bootstrap",
       "Tailwind",
-      "RxJS"
+      "RxJS",
+      "TYPO3"
     ]
   },
   {
