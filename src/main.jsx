@@ -13,6 +13,7 @@ const experience = [
     role: "IT Engineer (part time)",
     period: "August 2024 - Present",
     bullets: [
+      "Played an integral role in the team that built and established the Overleaf web platform from the ground up using React.",
       "Developing and maintaining university's self-hosted Overleaf platform using React, TypeScript and JavaScript.",
       "Building and shipping features such as internal dashboards, tracking, templates using React and TypeScript.",
       "Creating and maintaining GitLab CI/CD pipelines with build and test stages to support development and deployment.",
@@ -26,10 +27,10 @@ const experience = [
     role: "Student Assistant - Marketing & Communications (part time)",
     period: "August 2024 - Present",
     bullets: [
-      "Produced guides, figures, and structured summaries for reports and presentations, translating technical work for non-technical stakeholders.",
       "Delivered presentations and guidance sessions to a wide range of audiences, both in-person and online.",
+      "Developed and maintained Aarhus University web pages for international audience using Typo3, HTML, JavaScript and CSS - with a focus on usability, accessibility, SEO, and consistent UX. ",
+      "Produced guides, figures, and structured summaries for reports and presentations, translating technical work for non-technical stakeholders.",
       "Helped students navigate university systems and resources.",
-      "Developed and maintained Aarhus University web pages for international audience using Typo3, HTML, JavaScript and CSS - with a focus on usability, accessibility, SEO, and consistent UX. "
     ]
   },
   {
@@ -40,7 +41,7 @@ const experience = [
       "Built energy management web applications using Angular, TypeScript, RxJS, JavaScript, HTML and CSS.",
       "Developed and migrated 20+ legacy AngularJS components to modern Angular while preserving existing functionality.",
       "Improved frontend architecture, responsiveness and performance across key application modules.",
-      "Achieved up to 100% unit test coverage across key modules using Jest and Karma.",
+      "Established unit testing framework and achieved up to 100% unit test coverage across key modules.",
       "Applied reusable component patterns and frontend engineering best practices to improve maintainability."
     ]
   },
@@ -51,6 +52,7 @@ const experience = [
     bullets: [
       "Developed enterprise healthcare operations web applications using Angular and .NET.",
       "Built reusable Angular components and implemented frontend features for large-scale enterprise applications.",
+      "Optimised frontend performance across key application modules, reducing initial load time by approximately 30% through lazy loading, code splitting, and bundle optimisation.  ",
       "Collaborated with cross-functional teams to deliver features and resolve technical issues."
     ]
   },
@@ -59,11 +61,12 @@ const experience = [
     role: "Software Engineer (full time)",
     period: "July 2019 - Jan 2022",
     bullets: [
-      "Developed frontend features for a modernised cloud-native taxation web application using Angular and related technologies.",
       "Contributed to the transition from a legacy client-server platform to Angular microapps with server-side and client-side rendering.",
       "Contributed to Nx Workspace and Angular upgrades and multiple application feature implementations.",
+      "Provided support for three months to a specialised team migrating an AngularJS web application to Angular, contributing to component development, testing, and functionality preservation, with Tailwind CSS for styling. ",
+      "Developed frontend features for a modernised cloud-native taxation web application using Angular and related technologies.",
       "Implemented SonarQube and contributed to Karma and TSLint migrations to improve code quality and development workflows.",
-      "Mentored teammates, conducted internal technical sessions and participated in client demos and sprint reviews."
+      "Collaborated with cross-functional teams, delivered internal technical sessions and demos, and conducted client demos."
     ]
   }
 ];
